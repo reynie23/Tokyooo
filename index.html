@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>TTS</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+
+  <!-- Header -->
+  <header class="header">
+    <nav class="nav-container">
+      <a href="#backtomainpage" class="nav-link">Back to main page</a>
+      <a href="#home" class="logo">
+        <img src="logo.png" alt="Logo" class="logo-img">
+        <span class="logo-text">Tukuran Tourist Spots</span>
+      </a>
+      <ul class="nav-menu">
+        <li class="nav-item"><a href="#home" class="nav-link">Home</a></li>
+        <li class="nav-item"><a href="#destination" class="nav-link">Facilities</a></li>
+        <li class="nav-item"><a href="#gallery" class="nav-link">Gallery</a></li>
+        <li class="nav-item"><a href="#developers" class="nav-link">Developers</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Main Content -->
+  <main class="main-content">
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+      <div class="hero-slideshow">
+        <div class="hero-slide active" style="background-image: url('entrance.jpg')"></div>
+      </div>
+      <div class="hero-content">
+        <h1>TOKYO BY THE BAY BEACH RESORT</h1>
+        <div class="typing-text">
+          <span id="typing-output" class="typing-animation"></span>
+        </div>
+      </div>
+    </section>
+
+    <!-- Facilities Section -->
+    <section id="destination" class="featured-destinations">
+      <h2 class="section-title"><span>Facilities</span></h2>
+
+      <div class="destination-item">
+        <div class="destination-image">
+          <div class="slideshow-container" data-slideshow="1">
+            <div class="slide active" style="background-image: url('f1.jpg')"></div>
+          </div>
+        </div>
+        <div class="destination-content">
+          <h3>REST ROOM</h3>
+          <p>Enjoy a comfortable stay in our air-conditioned restrooms with soft beds, perfect for resting by the sea. We offer large rooms at ₱2,500, medium rooms at ₱1,500, and small rooms at ₱1,000.</p>
+        </div>
+      </div>
+
+      <div class="destination-item">
+        <div class="destination-image">
+          <div class="slideshow-container" data-slideshow="1">
+            <div class="slide active" style="background-image: url('f2.jpg')"></div>
+          </div>
+        </div>
+        <div class="destination-content">
+          <h3>COTTAGES</h3>
+          <p>Enjoy the fresh ocean breeze, soft sands, and peaceful waves at our beach, open 24 hours for your convenience. Relax in cottages near the sea, available for ₱400 (day use) and ₱800 (overnight stay). It’s the perfect spot for a day trip or a restful night by the shore.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Gallery Section -->
+    <section id="gallery" class="featured-destinations">
+      <h2 class="section-title"><span>Gallery</span></h2>
+      <div class="gallery">
+        <img src="1.jpg" alt="Image 1">
+        <img src="2.jpg" alt="Image 2">
+        <img src="3.jpg" alt="Image 3">
+        <img src="4.jpg" alt="Image 4">
+        <img src="5.jpg" alt="Image 5">
+        <img src="6.jpg" alt="Image 6">
+        <img src="7.jpg" alt="Image 7">
+        <img src="8.jpg" alt="Image 8">
+        <img src="9.jpg" alt="Image 9">
+        <img src="10.jpg" alt="Image 10">
+        <img src="11.jpg" alt="Image 11">
+      </div>
+    </section>
+
+    <!-- Modal -->
+    <div class="modal" id="modal">
+      <span class="close" id="closeBtn">&times;</span>
+      <button class="modal-nav" id="prevBtn">&#10094;</button>
+      <img id="modalImg" src="" alt="Full View">
+      <button class="modal-nav" id="nextBtn">&#10095;</button>
+    </div>
+
+    <!-- Developers Section -->
+    <section id="developers" class="developers">
+      <h2 class="section-title"><span>Developer</span></h2>
+      <div class="developers-grid">
+        <div class="developer-card">
+          <div class="developer-video">
+            <img src="dev1.jpg" alt="Img" class="developer-video">
+          </div>
+          <div class="developer-name">BONBON, KEA GUEN</div>
+          <div style="color: transparent;" class="developer-role"></div>
+          <div class="developer-bio">PHOTOGRAPHER</div>
+        </div>
+        <div class="developer-card">
+          <div class="developer-video">
+            <img src="dev2.jpg" alt="Img" class="developer-video">
+          </div>
+          <div class="developer-name">LASCUÑA, ROE</div>
+          <div style="color: transparent;" class="developer-role"></div>
+          <div class="developer-bio">DRIVER, INTERVIEWER</div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="footer-content">
+      <!-- Left Column -->
+      <div class="footer-section">
+        <h4>Tukuran Tourist Spots</h4>
+        <ul class="footer-links">
+          <li><a href="#home">Home</a></li>
+          <li><a href="#destination">Facilities</a></li>
+          <li><a href="#gallery">Gallery</a></li>
+          <li><a href="#developers">Developers</a></li>
+        </ul>
+      </div>
+
+      <!-- Right Column (Contact Us) -->
+      <div class="footer-section">
+        <h4>CONTACT US</h4>
+        <ul class="footer-links">
+          <li> <a href="tel:+639123456789">09503477444</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <p>&copy; 2025 Tukuran Tourist Spots. All rights reserved. Discover your outing.</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+
+</html>
